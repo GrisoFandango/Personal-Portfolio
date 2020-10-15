@@ -1,0 +1,253 @@
+/* ************************************** */
+/* -------TABLE OF CONTENT--------------- */
+/* ************************************** */
+/* 1. GLOBAL CSS                          */
+/* 2. HEADER                              */
+/* 3. SECTION ONE                         */
+/* 4. SECTION TWO                         */
+
+/*******************/
+/* GLOBAL CSS      */
+/*******************/
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+  --crl-primary: #d5d2d9;
+  --crl-dark: #2d3859;
+  --clr-light: #fdfdff;
+  --clr-shadow: #f26938;
+  --fw-normal: 400;
+  --fw-medium: 500;
+  --fw-bold: 700;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+  font-family: "Work Sans", sans-serif;
+  margin: 0;
+  line-height: 1;
+}
+
+/* img {
+  vertical-align: top;
+} */
+
+.container {
+  max-width: 1440px;
+  margin: auto;
+}
+/**********/
+/* HEADER */
+/**********/
+.head {
+  background-image: url(../img/Tranquility.jpg);
+  background-size: cover;
+  text-align: center;
+  color: var(--crl-primary);
+  height: 50vh;
+}
+
+.head__title {
+  display: inline-block;
+  font-weight: var(--fw-bold);
+  font-size: 3rem;
+  position: relative;
+  padding: 0.5rem;
+  padding-top: 30%;
+}
+
+.head__title::after {
+  content: "";
+  position: absolute;
+  background: var(--clr-shadow);
+  height: 3px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.head__subtitle {
+  font-weight: var(--fw-normal);
+  font-style: italic;
+  font-size: 1.25rem;
+  padding: 0.5rem;
+}
+
+/* SECTION ONE */
+.secOne {
+  margin: 0;
+  color: var(--crl-dark);
+  background-color: var(--clr-light);
+}
+
+.secOne_img {
+  width: 70%;
+  max-width: 400px;
+  margin: 2rem auto;
+}
+.secOne__mypic {
+  /* display: block; */
+  width: 100%;
+  height: auto;
+  border: 15px solid var(--crl-dark);
+  border-radius: 50%;
+  box-shadow: 2px 2px 4px 0 var(--clr-shadow);
+}
+
+.secOne__bio {
+  margin: 0 1rem;
+}
+
+.secOne__title {
+  font-weight: var(--fw-bold);
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px var(--clr-shadow);
+  text-align: center;
+}
+
+.secOne__subtitle {
+  font-weight: var(--fw-bold);
+  font-size: 1.5rem;
+  margin-top: 0.75rem;
+}
+
+.secOne__p {
+  font-weight: var(--fw-normal);
+  font-size: 1.25rem;
+  line-height: 2rem;
+  margin-top: 1rem;
+}
+
+/******************/
+/*  SECTION TWO   */
+/******************/
+.secTwo {
+  margin-top: 2rem;
+  color: var(--crl-dark);
+  background: var(--crl-primary);
+}
+
+.secTwo__education {
+  margin: 0 1rem;
+}
+
+.secTwo__title {
+  font-weight: var(--fw-bold);
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px var(--clr-shadow);
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.secTwo__subtitle {
+  font-weight: var(--fw-bold);
+  font-size: 1.5rem;
+  margin-top: 0.75rem;
+  text-align: center;
+}
+
+.secTwo__box {
+  margin-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.secTwo__box--img {
+  width: 20%;
+  display: inline-block;
+}
+
+.secTwo__icon {
+  width: 100%;
+  display: inline-block;
+  vertical-align: unset;
+}
+
+.secTwo__box--info {
+  width: 70%;
+  display: inline-block;
+  margin: 0;
+  padding-left: 1rem;
+  vertical-align: top;
+}
+
+.secTwo__subject {
+  font-weight: var(--fw-bold);
+}
+
+.secTwo__place a {
+  text-decoration: none;
+}
+
+/*****************/
+/* SECTION THREE */
+/*****************/
+
+.secThree {
+  color: var(--crl-primary);
+  background: var(--crl-dark);
+}
+
+.secThree__experience {
+  margin: 0 1rem;
+}
+
+.secThree__title {
+  font-weight: var(--fw-bold);
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px var(--clr-shadow);
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.secThree__subtitle {
+  font-weight: var(--fw-bold);
+  font-size: 1.5rem;
+  margin: 0.75rem 0;
+  text-align: center;
+}
+
+.secThree__box {
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.secThree__box--info {
+  display: inline-block;
+  margin: 0;
+
+  vertical-align: top;
+}
+
+.secThree__subject {
+  font-weight: var(--fw-bold);
+}
+
+.secThree__period {
+  padding-bottom: 1rem;
+  font-size: 0.8rem;
+}
+
+.secThree__description {
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.secThree__box--skill {
+  display: inline-block;
+  width: 25%;
+  margin-right: 5%;
+  vertical-align: top;
+}
+
+.secThree__box--bar {
+  display: inline-block;
+  width: 65%;
+}
