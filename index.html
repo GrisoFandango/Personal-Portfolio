@@ -7,18 +7,20 @@
     <!-- GOOGLE FONT -->
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;1,500;1,700&display=swap" rel="stylesheet">
     <!-- CSS -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="/assets/css/material-kit.css?v=2.0.4" rel="stylesheet" />
     <link rel="stylesheet" href="css/main.css">
 
 </head>
 <body>
-    <div class="container">
-        <header class="head">
+    <header class="head">
+        <div>
             <h1 class="head__title">Yuri Avello</h1>
             <h3 class="head__subtitle">Interactive Resume</h3>
-        </header>
+        </div>
+    </header>
+    <div class="container">
         <section class="secOne">
             <!-- <img class="secOne__svg" src="/img/BlueHalfMoon.png" alt=""> -->
             <div class="secOne_img">
@@ -40,477 +42,637 @@
         <section class="secTwo">
             <div class="secTwo__education">
                 <h3 class="secTwo__title">Education</h3>
-                <h4 class="secTwo__subtitle">Completed</h4>
 
-                <div class="secTwo__box">
-                    <div class="secTwo__box--img">
-                        <img src="/img/Udemy1.JPG" alt="" class="secTwo__icon">
+                <div id="accordion">
+                    <div class="card card--education">
+                      <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link secTwo__subtitle" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Completed
+                          </button>
+                        </h5>
+                      </div>
+                  
+                      <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="secTwo__box">
+                                <div class="secTwo__box--img">
+                                    <img src="/img/Udemy1.JPG" alt="" class="secTwo__icon">
+                                </div>
+                                <div class="secTwo__box--info">
+                                    <p class="secTwo__subject">Web Development Bootcamp - Colt Steel</p>
+                                    <p class="secTwo__place"><em><a href="https://www.udemy.com/course/the-web-developer-bootcamp/" id="">Udemy</a></em></p>
+                                    <p class="secTwo__period">July 2020</p>
+                                </div>
+                            </div>
+            
+                            <div class="secTwo__box">
+                                <div class="secTwo__box--img">
+                                    <img src="/img/cca.png" alt="" class="secTwo__icon">
+                                </div>
+                                <div class="secTwo__box--info">
+                                    <p class="secTwo__subject">Java Level 2</p>
+                                    <p class="secTwo__place"><em><a href="#" id="">Cambridge Certification Authority</a></em></p>
+                                    <p class="secTwo__period">January 2020</p>
+                                </div>
+                            </div>
+            
+                            <div class="secTwo__box">
+                                <div class="secTwo__box--img">
+                                    <img src="/img/cca.png" alt="" class="secTwo__icon">
+                                </div>
+                                <div class="secTwo__box--info">
+                                    <p class="secTwo__subject">Java Level 1</p>
+                                    <p class="secTwo__place"><em><a href="#" id="">Cambridge Certification Authority</a></em></p>
+                                    <p class="secTwo__period">January 2020</p>
+                                </div>
+                            </div>
+            
+                            <div class="secTwo__box">
+                                <div class="secTwo__box--img">
+                                    <img src="/img/linkedin.jpg" alt="" class="secTwo__icon">
+                                </div>
+                                <div class="secTwo__box--info">
+                                    <p class="secTwo__subject">Programming Fondations: Data Structure</p>
+                                    <p class="secTwo__place"><em><a href="#" id=""></a>Linkedin</a></em></p>
+                                    <p class="secTwo__period">December 2019</p>
+                                </div>
+                            </div>
+            
+                            <div class="secTwo__box">
+                                <div class="secTwo__box--img">
+                                    <img src="/img/code-with-mosh-logo_300pix.jpg" alt="" class="secTwo__icon">
+                                </div>
+                                <div class="secTwo__box--info">
+                                    <p class="secTwo__subject">The Complete Python Course</p>
+                                    <p class="secTwo__place"><em><a href="#" id="">Code with Mosh</a></em></p>
+                                    <p class="secTwo__period">November 2019</p>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
                     </div>
-                    <div class="secTwo__box--info">
-                        <p class="secTwo__subject">Web Development Bootcamp - Colt Steel</p>
-                        <p class="secTwo__place"><em><a href="https://www.udemy.com/course/the-web-developer-bootcamp/" id="">Udemy</a></em></p>
-                        <p class="secTwo__period">July 2020</p>
+
+                    <div class="card card--education">
+                      <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link secTwo__subtitle collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            In Progress
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="secTwo__box">
+                                <div class="secTwo__box--img">
+                                    <img src="/img/uwl.jpg" alt="" class="secTwo__icon">
+                                </div>
+                                <div class="secTwo__box--info">
+                                    <p class="secTwo__subject">BSc (Hons) IT Management for Business </p>
+                                    <p class="secTwo__place"><em><a href="#" id="">University of West London</a></em></p>
+                                    <p class="secTwo__period">Graduation in 2022</p>
+                                </div>
+                            </div>
+                            <div class="secTwo__box">
+                                <div class="secTwo__box--img">
+                                    <img src="/img/Udemy1.JPG" alt="" class="secTwo__icon">
+                                </div>
+                                <div class="secTwo__box--info">
+                                    <p class="secTwo__subject">The complete Web developer in 2020 - Andrei Neagoie </p>
+                                    <p class="secTwo__place"><em><a href="https://www.udemy.com/share/101Y5MB0seclxaRXQ=/" id="">Udemy</a></em></p>
+                                    <p class="secTwo__period"></p>
+                                </div>
+                            </div>                        </div>
+                      </div>
                     </div>
+                    <div class="card card--education">
+                      <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link secTwo__subtitle collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Planned
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="secTwo__box">
+                                <div class="secTwo__box--img">
+                                    <img src="/img/Udemy1.JPG" alt="" class="secTwo__icon">
+                                </div>
+                                <div class="secTwo__box--info">
+                                    <p class="secTwo__subject">User Experience Design Essentials - Daniel Scott </p>
+                                    <p class="secTwo__place"><em><a href="https://www.udemy.com/share/101ssyB0seclxaRXQ=/" id="">Udemy</a></em></p>
+                                    <p class="secTwo__period"></p>
+                                </div>
+                            </div>
+                            <div class="secTwo__box">
+                                <div class="secTwo__box--img">
+                                    <img src="/img/Udemy1.JPG" alt="" class="secTwo__icon">
+                                </div>
+                                <div class="secTwo__box--info">
+                                    <p class="secTwo__subject">The Ultimate MySQL Bootcamp - Colt Steele </p>
+                                    <p class="secTwo__place "><em><a href="https://www.udemy.com/share/101Wq0B0seclxaRXQ=/" id="">Udemy</a></em></p>
+                                    <p class="secTwo__period"></p>
+                                </div>
+                            </div>
+            
+                            <div class="secTwo__box">
+                                <div class="secTwo__box--img">
+                                    <img src="/img/Udemy1.JPG" alt="" class="secTwo__icon">
+                                </div>
+                                <div class="secTwo__box--info">
+                                    <p class="secTwo__subject">The Complete Junior to Senior Web Developer Roadmap - Andrei Neagoie </p>
+                                    <p class="secTwo__place"><em><a href="https://www.udemy.com/share/101vkKB0seclxaRXQ=/" id="">Udemy</a></em></p>
+                                    <p class="secTwo__period"></p>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-
-                <div class="secTwo__box">
-                    <div class="secTwo__box--img">
-                        <img src="/img/cca.png" alt="" class="secTwo__icon">
-                    </div>
-                    <div class="secTwo__box--info">
-                        <p class="secTwo__subject">Java Level 2</p>
-                        <p class="secTwo__place"><em><a href="#" id="">Cambridge Certification Authority</a></em></p>
-                        <p class="secTwo__period">January 2020</p>
-                    </div>
-                </div>
-
-                <div class="secTwo__box">
-                    <div class="secTwo__box--img">
-                        <img src="/img/cca.png" alt="" class="secTwo__icon">
-                    </div>
-                    <div class="secTwo__box--info">
-                        <p class="secTwo__subject">Java Level 1</p>
-                        <p class="secTwo__place"><em><a href="#" id="">Cambridge Certification Authority</a></em></p>
-                        <p class="secTwo__period">January 2020</p>
-                    </div>
-                </div>
-
-                <div class="secTwo__box">
-                    <div class="secTwo__box--img">
-                        <img src="/img/linkedin.jpg" alt="" class="secTwo__icon">
-                    </div>
-                    <div class="secTwo__box--info">
-                        <p class="secTwo__subject">Programming Fondations: Data Structure</p>
-                        <p class="secTwo__place"><em><a href="#" id=""></a>Linkedin</a></em></p>
-                        <p class="secTwo__period">December 2019</p>
-                    </div>
-                </div>
-
-                <div class="secTwo__box">
-                    <div class="secTwo__box--img">
-                        <img src="/img/code-with-mosh-logo_300pix.jpg" alt="" class="secTwo__icon">
-                    </div>
-                    <div class="secTwo__box--info">
-                        <p class="secTwo__subject">The Complete Python Course</p>
-                        <p class="secTwo__place"><em><a href="#" id="">Code with Mosh</a></em></p>
-                        <p class="secTwo__period">November 2019</p>
-                    </div>
-                </div>
-
-                <h4 class="secTwo__subtitle">In Progress</h4>
-
-                <div class="secTwo__box">
-                    <div class="secTwo__box--img">
-                        <img src="/img/uwl.jpg" alt="" class="secTwo__icon">
-                    </div>
-                    <div class="secTwo__box--info">
-                        <p class="secTwo__subject">BSc (Hons) IT Management for Business </p>
-                        <p class="secTwo__place"><em><a href="#" id="">University of West London</a></em></p>
-                        <p class="secTwo__period">Graduation in 2022</p>
-                    </div>
-                </div>
-                <div class="secTwo__box">
-                    <div class="secTwo__box--img">
-                        <img src="/img/Udemy1.JPG" alt="" class="secTwo__icon">
-                    </div>
-                    <div class="secTwo__box--info">
-                        <p class="secTwo__subject">The complete Web developer in 2020 - Andrei Neagoie </p>
-                        <p class="secTwo__place"><em><a href="https://www.udemy.com/share/101Y5MB0seclxaRXQ=/" id="">Udemy</a></em></p>
-                        <p class="secTwo__period"></p>
-                    </div>
-                </div>
-
-                <h4 class="secTwo__subtitle">Planned</h4>
-                <div class="secTwo__box">
-                    <div class="secTwo__box--img">
-                        <img src="/img/Udemy1.JPG" alt="" class="secTwo__icon">
-                    </div>
-                    <div class="secTwo__box--info">
-                        <p class="secTwo__subject">User Experience Design Essentials - Daniel Scott </p>
-                        <p class="secTwo__place"><em><a href="https://www.udemy.com/share/101ssyB0seclxaRXQ=/" id="">Udemy</a></em></p>
-                        <p class="secTwo__period"></p>
-                    </div>
-                </div>
-                <div class="secTwo__box">
-                    <div class="secTwo__box--img">
-                        <img src="/img/Udemy1.JPG" alt="" class="secTwo__icon">
-                    </div>
-                    <div class="secTwo__box--info">
-                        <p class="secTwo__subject">The Ultimate MySQL Bootcamp - Colt Steele </p>
-                        <p class="secTwo__place "><em><a href="https://www.udemy.com/share/101Wq0B0seclxaRXQ=/" id="">Udemy</a></em></p>
-                        <p class="secTwo__period"></p>
-                    </div>
-                </div>
-
-                <div class="secTwo__box">
-                    <div class="secTwo__box--img">
-                        <img src="/img/Udemy1.JPG" alt="" class="secTwo__icon">
-                    </div>
-                    <div class="secTwo__box--info">
-                        <p class="secTwo__subject">The Complete Junior to Senior Web Developer Roadmap - Andrei Neagoie </p>
-                        <p class="secTwo__place"><em><a href="https://www.udemy.com/share/101vkKB0seclxaRXQ=/" id="">Udemy</a></em></p>
-                        <p class="secTwo__period"></p>
-                    </div>
-                </div>
-
-
-
-            </div>
 
         </section>
         <section class="secThree">
             <div class="secThree__experience">
                 <h3 class="secThree__title">Experience</h3>
-                <h4 class="secThree__subtitle">Work</h4>
 
-                <div class="secThree__box">
-                    
-                    <div class="secThree__box--info">
-                        <p class="secThree__subject">Frankie's & Bennys - <em> Waiter</em> - UK</p>
-                        <p class="secThree__period"><em> July 2015 - Current</em></p>
-                        <p class="secThree__description">Greeting clients, presenting menus to clients and answering questions about menu items, making recommendations upon request.</p>
-                        <p class="secThree__description">Setting up or restocking product displays. Serving food and collecting payments from customers.</p>
-                        <p class="secThree__description">When needed, I took a role as a supervisor or manager including closing procedure and cash out. Ability to work under pressure and deal with stressful situations.</p>
-                    </div>
-                </div>
-                <div class="secThree__box">
-                    
-                    <div class="secThree__box--info">
-                        <p class="secThree__subject">Coffee Shop Co-Owner - Italy</p>
-                        <p class="secThree__period"><em> January 2007 - September 2014</em></p>
-                        <p class="secThree__description">Taking responsibility for the business performance of the coffee shop. Analysing and planning coffee shop sales levels and profitability. Financial management – planning and working to budgets, maximising profits and achieving sales targets, setting targets, controlling takings of the coffee shop, keeping statistical and financial records, administering payrolls, etc. Cash handling</p>
-                        <p class="secThree__description">Planning and coordinating menus. Recruiting, training and motivating staff. Managing staff and providing them with feedback. Responding to customer complaints. Maintaining high standards of quality control, hygiene, and health and safety. Checking stock levels and ordering supplies. Taking orders from customers for food or beverages. </p>
-                        <p class="secThree__description">Greeting clients, preparing and serving hot or cold beverages, such as coffee, espresso drinks, blended coffees, or teas. Cleaning and sanitizing work areas, utensils, and equipment. Handling customer complaints and queries. Devising and marketing promotional campaigns. Liaising with clients, vendors and suppliers. Barista skills and coffee business knowledge. </p>
-                    </div>
-                </div>
+                <div id="accordion">
+                    <div class="card card--experience">
+                      <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link secThree__subtitle collapsed" data-toggle="collapse" data-target="#collapseTwo-experience" aria-expanded="false" aria-controls="collapseTwo">
+                            Work
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseTwo-experience" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
 
-                
+                            <div class="secThree__box">
+                                <div class="secThree__box--info">
+                                    <p class="secThree__subject">Frankie's & Bennys - <em> Waiter</em> - UK</p>
+                                    <p class="secThree__period"><em> July 2015 - Current</em></p>
+                                    <p class="secThree__description">Greeting clients, presenting menus to clients and answering questions about menu items, making recommendations upon request.</p>
+                                    <p class="secThree__description">Setting up or restocking product displays. Serving food and collecting payments from customers.</p>
+                                    <p class="secThree__description">When needed, I took a role as a supervisor or manager including closing procedure and cash out. Ability to work under pressure and deal with stressful situations.</p>
+                                </div>
+                            </div>
+                            <div class="secThree__box">
+                                
+                                <div class="secThree__box--info">
+                                    <p class="secThree__subject">Coffee Shop Co-Owner - Italy</p>
+                                    <p class="secThree__period"><em> January 2007 - September 2014</em></p>
+                                    <p class="secThree__description">Taking responsibility for the business performance of the coffee shop. Analysing and planning coffee shop sales levels and profitability. Financial management – planning and working to budgets, maximising profits and achieving sales targets, setting targets, controlling takings of the coffee shop, keeping statistical and financial records, administering payrolls, etc. Cash handling</p>
+                                    <p class="secThree__description">Planning and coordinating menus. Recruiting, training and motivating staff. Managing staff and providing them with feedback. Responding to customer complaints. Maintaining high standards of quality control, hygiene, and health and safety. Checking stock levels and ordering supplies. Taking orders from customers for food or beverages. </p>
+                                    <p class="secThree__description">Greeting clients, preparing and serving hot or cold beverages, such as coffee, espresso drinks, blended coffees, or teas. Cleaning and sanitizing work areas, utensils, and equipment. Handling customer complaints and queries. Devising and marketing promotional campaigns. Liaising with clients, vendors and suppliers. Barista skills and coffee business knowledge. </p>
+                                </div>
+                            </div>                  
+                        </div>
 
-                <h4 class="secThree__subtitle">Tech Skills</h4>
-
-                
-                <div class="secThree__box">
-                    <div class="secThree__box--skill">
-                        <p class="secThree__skill">Vs Code</p>
-                    </div>
-
-                    <div class="secThree__box--bar">
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 90%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-                          </div>
-                    </div>
-                </div>
-
-                <div class="secThree__box">
-                    <div class="secThree__box--skill">
-                        <p class="secThree__skill">HTML 5</p>
+                      </div>
                     </div>
 
-                    <div class="secThree__box--bar">
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 80%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-                          </div>
-                    </div>
-                </div>
+                    <div class="card card--experience">
+                      <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link secThree__subtitle" data-toggle="collapse" data-target="#collapseOne-experience" aria-expanded="true" aria-controls="collapseOne">
+                            Tech Skills
+                          </button>
+                        </h5>
+                      </div>
+                  
+                      <div id="collapseOne-experience" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="secThree__box">
+                                <div class="secThree__box--skill">
+                                    <p class="secThree__skill">VS Code</p>
+                                </div>
+                                <div class="secThree__box--bar">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 90%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
 
-                <div class="secThree__box">
-                    <div class="secThree__box--skill">
-                        <p class="secThree__skill">SEO</p>
-                    </div>
+                            <div class="secThree__box">
+                                <div class="secThree__box--skill">
+                                    <p class="secThree__skill">HTML 5</p>
+                                </div>
 
-                    <div class="secThree__box--bar">
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 70%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-                          </div>
-                    </div>
-                </div>
+                                <div class="secThree__box--bar">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 80%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
 
-                <div class="secThree__box">
-                    <div class="secThree__box--skill">
-                        <p class="secThree__skill">CSS 3</p>
-                    </div>
+                            <div class="secThree__box">
+                                <div class="secThree__box--skill">
+                                    <p class="secThree__skill">SEO</p>
+                                </div>
 
-                    <div class="secThree__box--bar">
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 60%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-                          </div>
-                    </div>
-                </div>
+                                <div class="secThree__box--bar">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 70%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
 
-                <div class="secThree__box">
-                    <div class="secThree__box--skill">
-                        <p class="secThree__skill">Bootstrap</p>
-                    </div>
+                            <div class="secThree__box">
+                                <div class="secThree__box--skill">
+                                    <p class="secThree__skill">CSS 3</p>
+                                </div>
 
-                    <div class="secThree__box--bar">
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 60%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-                          </div>
-                    </div>
-                </div>
+                                <div class="secThree__box--bar">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 60%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                </div>
+                            </div>
 
-                <div class="secThree__box">
-                    <div class="secThree__box--skill">
-                        <p class="secThree__skill">Git/Github</p>
-                    </div>
+                            <div class="secThree__box">
+                                <div class="secThree__box--skill">
+                                    <p class="secThree__skill">Bootstrap</p>
+                                </div>
 
-                    <div class="secThree__box--bar">
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 60%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-                          </div>
-                    </div>
-                </div>
+                                <div class="secThree__box--bar">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 60%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
 
-                <div class="secThree__box">
-                    <div class="secThree__box--skill">
-                        <p class="secThree__skill">Javascript</p>
-                    </div>
+                            <div class="secThree__box">
+                                <div class="secThree__box--skill">
+                                    <p class="secThree__skill">Git/Github</p>
+                                </div>
 
-                    <div class="secThree__box--bar">
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 50%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-                          </div>
-                    </div>
-                </div>
+                                <div class="secThree__box--bar">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 60%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
 
-                <div class="secThree__box">
-                    <div class="secThree__box--skill">
-                        <p class="secThree__skill">Python</p>
-                    </div>
+                            <div class="secThree__box">
+                                <div class="secThree__box--skill">
+                                    <p class="secThree__skill">Javascript</p>
+                                </div>
 
-                    <div class="secThree__box--bar">
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 50%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-                          </div>
-                    </div>
-                </div>
+                                <div class="secThree__box--bar">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 50%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
 
-                <div class="secThree__box">
-                    <div class="secThree__box--skill">
-                        <p class="secThree__skill">Java</p>
-                    </div>
+                            <div class="secThree__box">
+                                <div class="secThree__box--skill">
+                                    <p class="secThree__skill">Python</p>
+                                </div>
 
-                    <div class="secThree__box--bar">
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 50%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-                          </div>
-                    </div>
-                </div>
+                                <div class="secThree__box--bar">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 50%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
 
-                <div class="secThree__box">
-                    <div class="secThree__box--skill">
-                        <p class="secThree__skill">BEM CSS</p>
-                    </div>
+                            <div class="secThree__box">
+                                <div class="secThree__box--skill">
+                                    <p class="secThree__skill">Java</p>
+                                </div>
 
-                    <div class="secThree__box--bar">
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 50%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-                          </div>
-                    </div>
-                </div>
+                                <div class="secThree__box--bar">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 50%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
 
-                <div class="secThree__box">
-                    <div class="secThree__box--skill">
-                        <p class="secThree__skill">Express.js</p>
-                    </div>
+                            <div class="secThree__box">
+                                <div class="secThree__box--skill">
+                                    <p class="secThree__skill">BEM CSS</p>
+                                </div>
 
-                    <div class="secThree__box--bar">
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 40%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-                          </div>
-                    </div>
-                </div>
+                                <div class="secThree__box--bar">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 50%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
 
-                <div class="secThree__box">
-                    <div class="secThree__box--skill">
-                        <p class="secThree__skill">Node.js</p>
-                    </div>
+                            <div class="secThree__box">
+                                <div class="secThree__box--skill">
+                                    <p class="secThree__skill">Express.js</p>
+                                </div>
 
-                    <div class="secThree__box--bar">
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 40%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-                          </div>
-                    </div>
-                </div>
+                                <div class="secThree__box--bar">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 40%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
 
-                <div class="secThree__box">
-                    <div class="secThree__box--skill">
-                        <p class="secThree__skill">RESTful API</p>
-                    </div>
+                            <div class="secThree__box">
+                                <div class="secThree__box--skill">
+                                    <p class="secThree__skill">Node.js</p>
+                                </div>
 
-                    <div class="secThree__box--bar">
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 40%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-                          </div>
-                    </div>
-                </div>
+                                <div class="secThree__box--bar">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 40%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
 
-                <div class="secThree__box">
-                    <div class="secThree__box--skill">
-                        <p class="secThree__skill">MongoDB</p>
-                    </div>
+                            <div class="secThree__box">
+                                <div class="secThree__box--skill">
+                                    <p class="secThree__skill">RESTful API</p>
+                                </div>
 
-                    <div class="secThree__box--bar">
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 30%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-                          </div>
-                    </div>
-                </div>
+                                <div class="secThree__box--bar">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 40%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
 
-                <div class="secThree__box">
-                    <div class="secThree__box--skill">
-                        <p class="secThree__skill">UI/UX</p>
-                    </div>
+                            <div class="secThree__box">
+                                <div class="secThree__box--skill">
+                                    <p class="secThree__skill">MongoDB</p>
+                                </div>
 
-                    <div class="secThree__box--bar">
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 30%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-                          </div>
-                    </div>
-                </div>
+                                <div class="secThree__box--bar">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 30%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
 
-                <div class="secThree__box">
-                    <div class="secThree__box--skill">
-                        <p class="secThree__skill">SQL</p>
-                    </div>
+                            <div class="secThree__box">
+                                <div class="secThree__box--skill">
+                                    <p class="secThree__skill">UI/UX</p>
+                                </div>
 
-                    <div class="secThree__box--bar">
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-                          </div>
-                    </div>
-                </div>
-                
-                <h4 class="secThree__subtitle">Soft Skills</h4>
+                                <div class="secThree__box--bar">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 30%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
 
-                <div class="secThree__box">
-                    <div class="secThree__box--skill">
-                        <p class="secThree__skill">Italian</p>
-                    </div>
+                            <div class="secThree__box">
+                                <div class="secThree__box--skill">
+                                    <p class="secThree__skill">SQL</p>
+                                </div>
 
-                    <div class="secThree__box--bar">
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 100%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-                          </div>
-                    </div>
-                </div>
-
-                <div class="secThree__box">
-                    <div class="secThree__box--skill">
-                        <p class="secThree__skill">Reliable</p>
-                    </div>
-
-                    <div class="secThree__box--bar">
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 100%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-                          </div>
-                    </div>
-                </div>
-
-                <div class="secThree__box">
-                    <div class="secThree__box--skill">
-                        <p class="secThree__skill">Team worker</p>
-                    </div>
-
-                    <div class="secThree__box--bar">
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 100%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-                          </div>
-                    </div>
-                </div>
-                
-                <div class="secThree__box">
-                    <div class="secThree__box--skill">
-                        <p class="secThree__skill">Friendly</p>
+                                <div class="secThree__box--bar">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
                     </div>
 
-                    <div class="secThree__box--bar">
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 80%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-                          </div>
-                    </div>
-                </div>
 
-                <div class="secThree__box">
-                    <div class="secThree__box--skill">
-                        <p class="secThree__skill">Professional</p>
-                    </div>
+                    <div class="card card--experience">
+                      <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link secThree__subtitle collapsed" data-toggle="collapse" data-target="#collapseThree-experience" aria-expanded="false" aria-controls="collapseThree">
+                            Soft Skills
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseThree-experience" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body">
 
-                    <div class="secThree__box--bar">
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 80%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-                          </div>
+                            <div class="secThree__box">
+                                <div class="secThree__box--skill">
+                                    <p class="secThree__skill">Italian</p>
+                                </div>
+            
+                                <div class="secThree__box--bar">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 100%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                      </div>
+                                </div>
+                            </div>
+            
+                            <div class="secThree__box">
+                                <div class="secThree__box--skill">
+                                    <p class="secThree__skill">Reliable</p>
+                                </div>
+            
+                                <div class="secThree__box--bar">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 100%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                      </div>
+                                </div>
+                            </div>
+            
+                            <div class="secThree__box">
+                                <div class="secThree__box--skill">
+                                    <p class="secThree__skill">Team worker</p>
+                                </div>
+            
+                                <div class="secThree__box--bar">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 100%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                      </div>
+                                </div>
+                            </div>
+                            
+                            <div class="secThree__box">
+                                <div class="secThree__box--skill">
+                                    <p class="secThree__skill">Friendly</p>
+                                </div>
+            
+                                <div class="secThree__box--bar">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 80%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                      </div>
+                                </div>
+                            </div>
+            
+                            <div class="secThree__box">
+                                <div class="secThree__box--skill">
+                                    <p class="secThree__skill">Professional</p>
+                                </div>
+            
+                                <div class="secThree__box--bar">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 80%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                      </div>
+                                </div>
+                            </div>
+            
+                            <div class="secThree__box">
+                                <div class="secThree__box--skill">
+                                    <p class="secThree__skill">Dedicated</p>
+                                </div>
+            
+                                <div class="secThree__box--bar">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 80%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                      </div>
+                                </div>
+                            </div>
+            
+                            <div class="secThree__box">
+                                <div class="secThree__box--skill">
+                                    <p class="secThree__skill">English</p>
+                                </div>
+            
+                                <div class="secThree__box--bar">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 80%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                      </div>
+                                </div>
+                            </div>
+            
+                            <div class="secThree__box">
+                                <div class="secThree__box--skill">
+                                    <p class="secThree__skill">Numeracy</p>
+                                </div>
+            
+                                <div class="secThree__box--bar">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 70%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                      </div>
+                                </div>
+                            </div>
+            
+                            <div class="secThree__box">
+                                <div class="secThree__box--skill">
+                                    <p class="secThree__skill">Flexibility</p>
+                                </div>
+            
+                                <div class="secThree__box--bar">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 70%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                      </div>
+                                </div>
+                            </div>
+            
+                            <div class="secThree__box">
+                                <div class="secThree__box--skill">
+                                    <p class="secThree__skill">Spanish</p>
+                                </div>
+            
+                                <div class="secThree__box--bar">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 30%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                      </div>
+                                </div>
+                            </div> 
+                        </div>
+                      </div>
                     </div>
-                </div>
-
-                <div class="secThree__box">
-                    <div class="secThree__box--skill">
-                        <p class="secThree__skill">Dedicated</p>
-                    </div>
-
-                    <div class="secThree__box--bar">
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 80%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-                          </div>
-                    </div>
-                </div>
-
-                <div class="secThree__box">
-                    <div class="secThree__box--skill">
-                        <p class="secThree__skill">English</p>
-                    </div>
-
-                    <div class="secThree__box--bar">
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 80%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-                          </div>
-                    </div>
-                </div>
-
-                <div class="secThree__box">
-                    <div class="secThree__box--skill">
-                        <p class="secThree__skill">Numeracy</p>
-                    </div>
-
-                    <div class="secThree__box--bar">
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 70%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-                          </div>
-                    </div>
-                </div>
-
-                <div class="secThree__box">
-                    <div class="secThree__box--skill">
-                        <p class="secThree__skill">Flexibility</p>
-                    </div>
-
-                    <div class="secThree__box--bar">
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 70%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-                          </div>
-                    </div>
-                </div>
-
-                <div class="secThree__box">
-                    <div class="secThree__box--skill">
-                        <p class="secThree__skill">Spanish</p>
-                    </div>
-
-                    <div class="secThree__box--bar">
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 30%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-                          </div>
-                    </div>
-                </div>
-
+                  </div>
             </div>
-
         </section>
+
+        <section class="secFour">
+            <div class="secFour__portfolio">
+                <h3 class="secFour__title">Portfolio</h3>                
+                <div class="secFour container">
+                    <div class="row">
+
+                        <div class="secFour__card col-md-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Il Basilico</h4>
+                                    <p class="category">Cucina Italiana</p>
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-body__img">
+                                        <img class="card-body__img--img" src="/img/ilBasilico.png" alt="">
+                                    </div>
+                                    <div class="card-body__description">
+                                        <p class="card-body__description-p">Worked on this website for a new Italian Restauran. I started from a template and then i personalized it. <br> From this experience i learned how to write organize CSS, add Instagram Feed and how to send email from a form in PHP. <br>Furthermore, It was my first experience doing a website for someone else and helped me how to interact with the client, how to satisfy their request and thinking about a design that fit their business</p>
+                                        <div class="card-body__link">
+                                            <a href="www.ilbasilico.co" class="btn btn-round">Visit Website</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>
+
+                        <div class="secFour__card col-md-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">YA Digital Buddy</h4>
+                                    <p class="category">Freelance Digital Agency</p>
+                                </div>
+                                <div class="card-body">                                        <div class="card-body__img">
+                                        <img class="card-body__img--img" src="/img/yadigitalbuddy.png" alt="">
+                                    </div>
+                                    <div class="card-body__description">
+                                        <p class="card-body__description-p">I built this website for my freelance activity. <br> From this experience i learned how to deploy a website into a hosting service using FTP, how to implement in-page SEO and develop strategies to improve off-page SEO. <br>In addition, was my first experience on creating and submitting a sitemap.xml and add the website into the google search console. <br> </p>
+                                        <div class="card-body__link">
+                                            <a href="www.yadigitalbuddy.com" class="btn btn-round">Visit Website</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div class="secFour__card col-md-6 ">
+                            <div class="card">
+                                 <div class="card-header">
+                                     <h4 class="card-title">Yuri Avello</h4>
+                                     <p class="category">University Assignment</p>
+                                 </div>
+                                 <div class="card-body">
+                                    <div class="card-body__img">
+                                        <img class="card-body__img--img" src="/img/yavello.png" alt="">
+                                       </div>
+                                      <div class="card-body__description">
+                                        <p class="card-body__description-p">One of my first website that i made from zero. <br> It was an assignment for <em>Develop a Digital Identity</em>. <br>I made use of HTML 5, CSS 3 and Bootstrap 4 </p>
+                                        <div class="card-body__link">
+                                            <a href="https://grisofandango.github.io/yuriavello.github.io/" class="btn btn-round">Visit Website</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <h3 class="footer__title">Contacts</h3>
+            <em><h4 class="footer__quote">"Sometimes it's the journey that teach you a lot about the destination" (Drake)</h4></em>
+            <div class="footer__container container">
+                <div class="row">
+                    <div class="footer__info col-12 col-xl-4">
+                        <i class="fas fa-at"></i>
+                        <a class="footer__link" href="yuriavello@gmail.com">yuriavello(at)gmail.com</a>
+                    </div>
+                    <div class="footer__info col-12 col-xl-4">
+                        <i class="fab fa-linkedin-in"></i>
+                        <a class="footer__link" href="https://www.linkedin.com/in/yuriavello/">Yuri Avello</a>
+                    </div>
+                    <div class="footer__info col-12 col-xl-4">
+                        <i class="fab fa-github"></i>
+                        <a class="footer__link" href="https://github.com/GrisoFandango">GrisoFandango</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
     </div>
 
 
     <!-- JS SCript for Materia Theme -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="assets/js/core/jquery.min.js" type="text/javascript"></script>
     <script src="assets/js/core/popper.min.js" type="text/javascript"></script>
     <script src="assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>

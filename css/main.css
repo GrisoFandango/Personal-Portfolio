@@ -5,6 +5,8 @@
 /* 2. HEADER                              */
 /* 3. SECTION ONE                         */
 /* 4. SECTION TWO                         */
+/* 5. SECTION THREE                       */
+/* 6. SECTION FOUR                        */
 
 /*******************/
 /* GLOBAL CSS      */
@@ -44,6 +46,10 @@ p {
   max-width: 1440px;
   margin: auto;
 }
+
+a:hover {
+  text-decoration: none;
+}
 /**********/
 /* HEADER */
 /**********/
@@ -53,6 +59,9 @@ p {
   text-align: center;
   color: var(--crl-primary);
   height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .head__title {
@@ -60,8 +69,9 @@ p {
   font-weight: var(--fw-bold);
   font-size: 3rem;
   position: relative;
-  padding: 0.5rem;
-  padding-top: 30%;
+  /* padding: 0.5rem;
+  padding-top: 30%; */
+  line-height: 100%;
 }
 
 .head__title::after {
@@ -91,7 +101,7 @@ p {
 .secOne_img {
   width: 70%;
   max-width: 400px;
-  margin: 2rem auto;
+  margin: 3rem auto;
 }
 .secOne__mypic {
   /* display: block; */
@@ -109,7 +119,7 @@ p {
 .secOne__title {
   font-weight: var(--fw-bold);
   font-size: 3rem;
-  text-shadow: 2px 2px 4px var(--clr-shadow);
+  /* text-shadow: 2px 2px 4px var(--clr-shadow); */
   text-align: center;
 }
 
@@ -137,20 +147,26 @@ p {
 
 .secTwo__education {
   margin: 0 1rem;
+  padding: 2rem 0;
 }
 
 .secTwo__title {
   font-weight: var(--fw-bold);
   font-size: 3rem;
-  text-shadow: 2px 2px 4px var(--clr-shadow);
+  /* text-shadow: 2px 2px 4px var(--clr-shadow); */
   text-align: center;
-  padding-top: 2rem;
+  /* padding: 2rem 0; */
+}
+
+.card--education {
+  margin: 3rem auto 1rem auto;
+  padding-bottom: 1rem;
 }
 
 .secTwo__subtitle {
+  color: var(--crl-primary);
   font-weight: var(--fw-bold);
-  font-size: 1.5rem;
-  margin-top: 0.75rem;
+  font-size: 1rem;
   text-align: center;
 }
 
@@ -162,6 +178,7 @@ p {
 .secTwo__box--img {
   width: 20%;
   display: inline-block;
+  padding-left: 0.5rem;
 }
 
 .secTwo__icon {
@@ -174,7 +191,7 @@ p {
   width: 70%;
   display: inline-block;
   margin: 0;
-  padding-left: 1rem;
+  padding-left: 0.5rem;
   vertical-align: top;
 }
 
@@ -197,32 +214,38 @@ p {
 
 .secThree__experience {
   margin: 0 1rem;
+  padding: 2rem 0;
 }
 
 .secThree__title {
   font-weight: var(--fw-bold);
   font-size: 3rem;
-  text-shadow: 2px 2px 4px var(--clr-shadow);
+  /* text-shadow: 2px 2px 4px var(--clr-shadow); */
   text-align: center;
-  padding-top: 2rem;
+  /* padding-top: 2rem; */
+}
+
+.card--experience {
+  margin: 3rem auto 1rem auto;
+  padding-bottom: 1rem;
+  color: var(--crl-dark);
 }
 
 .secThree__subtitle {
+  color: var(--crl-primary);
   font-weight: var(--fw-bold);
-  font-size: 1.5rem;
-  margin: 0.75rem 0;
+  font-size: 1rem;
   text-align: center;
 }
 
 .secThree__box {
   margin-top: 1rem;
-  padding-bottom: 1rem;
+  padding: 0 1rem 1rem 1rem;
 }
 
 .secThree__box--info {
   display: inline-block;
   margin: 0;
-
   vertical-align: top;
 }
 
@@ -242,12 +265,153 @@ p {
 
 .secThree__box--skill {
   display: inline-block;
-  width: 25%;
+  width: 45%;
   margin-right: 5%;
   vertical-align: top;
 }
 
 .secThree__box--bar {
   display: inline-block;
-  width: 65%;
+  width: 45%;
+}
+
+/****************/
+/* SECTION FOUR */
+/****************/
+
+.secFour {
+  color: var(--crl-dark);
+  background: var(--crl-primary);
+  padding-bottom: 2rem;
+}
+
+.secFour__portfolio {
+  margin: 0 1rem;
+}
+
+.secFour__flex {
+  display: flex;
+  width: 100%;
+}
+
+.secFour__title {
+  font-weight: var(--fw-bold);
+  font-size: 3rem;
+  /* text-shadow: 1px 1px 5px var(--clr-shadow); */
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.secFour__card {
+  margin-top: 3rem;
+}
+
+.card {
+  box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0 rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+.card-header {
+  color: var(--clr-light);
+  margin: -30px auto 0 auto;
+  width: 90%;
+  border: 0;
+  background: linear-gradient(45deg, var(--crl-dark), #00aaff);
+  box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0 rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+  padding: 20px 0;
+}
+
+.card-body__img {
+  display: flex;
+  max-width: 100%;
+}
+
+.card-body__img--img {
+  max-width: auto;
+  height: 100%;
+}
+
+.card-body__description {
+  margin: 1rem;
+}
+.card-body__description br {
+  margin-bottom: 1rem;
+}
+
+.card-body__link {
+  display: flex;
+  margin: 1rem auto;
+}
+
+.card-body__link a {
+  background: var(--crl-dark);
+  color: var(--crl-primary);
+  margin: 0 auto;
+  box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0 rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+/**********/
+/* FOOTER */
+/**********/
+footer {
+  background: var(--clr-light);
+  color: var(--crl-dark);
+}
+
+.footer__title {
+  font-weight: var(--fw-bold);
+  font-size: 3rem;
+  /* text-shadow: 1px 1px 5px var(--clr-shadow); */
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.footer__quote {
+  font-size: 1rem;
+  font-weight: var(--fw-normal);
+  position: relative;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.footer__container {
+  margin: 0.5rem auto 1rem auto;
+  font-size: 1.2rem;
+  position: relative;
+  /* max-width: 95%; */
+}
+
+.footer__container::before {
+  position: absolute;
+  content: "";
+  background: var(--clr-shadow);
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+}
+
+.footer__container::after {
+  position: absolute;
+  content: "";
+  background: var(--clr-shadow);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+}
+
+.footer__info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem auto;
+}
+.footer__info i {
+  font-size: 2rem;
+}
+
+.footer__info a {
+  padding-left: 1rem;
 }
