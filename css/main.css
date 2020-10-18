@@ -330,6 +330,7 @@ a:hover {
 .card-body__img {
   display: inline-flex;
   max-width: 100%;
+  height: auto;
 }
 
 .card-body__img--img {
