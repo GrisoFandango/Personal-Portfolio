@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background: #060810;
+  height: 100vh;
+}
+
+.navmenu {
+  position: absolute;
+  top: 50%;
+  right: 2rem;
+  transform: translateY(-50%);
+}
+
+.navmenu ul {
+  padding-left: 50px;
+  position: relative;
+}
+
+.navmenu ul li a {
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+  color: #3742da;
+  background: #060810;
+  font-size: 1.5rem;
+  line-height: 1rem;
+  font-weight: 500;
+  width: 150px;
+  /* height: 50px; */
+  padding: 25px 0;
+  text-align: center;
+  line-height: 100%;
+  border: 3px solid red;
+}
+
+.navmenu ul li a.active {
+  font-weight: 700;
+  background: red;
+}
+
+.navmenu ul li a.active::before {
+  background: #3742da;
+}

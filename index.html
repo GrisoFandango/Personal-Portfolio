@@ -13,7 +13,21 @@
     <link rel="stylesheet" href="css/main.css">
 
 </head>
-<body>
+<body data-spy="scroll" data-target="#navbar" data-offset="100">
+    <nav class="navbar navbar-expand-lg sticky-top" id="navbar">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul>
+                  <li><a href="#profile" class="nav-link"> Profile</a></li>
+                  <li><a href="#education" class="nav-link"> Education</a></li>
+                  <li><a href="#experience" class="nav-link"> Experience</a></li>
+                  <li><a href="#portfolio" class="nav-link"> Portfolio</a></li>
+              </ul>
+
+          </div>
+    </nav>
     <header class="head">
         <div>
             <h1 class="head__title">Yuri Avello</h1>
@@ -21,12 +35,13 @@
         </div>
     </header>
     <div class="container">
-        <section class="secOne">
+        <section class="secOne scroll-down" id="profile">
             <!-- <img class="secOne__svg" src="/img/BlueHalfMoon.png" alt=""> -->
-            <div class="secOne_img">
+            <div class="row">
+            <div class="secOne_img col-12 col-md-4">
                 <img src="/img/MyPicture.jpg" alt="" class="secOne__mypic">
             </div>
-            <div class="secOne__bio">
+            <div class="secOne__bio col-12 col-md-8">
                 <h3 class="secOne__title">Profile</h3>
                 <h4 class="secOne__subtitle">About Me</h3>
                 <p class="secOne__p">I am on the verge of switching career.</p>
@@ -37,14 +52,16 @@
                     
                     <p class="secOne__p">I am a keen learner, ready to tackle any challenges that come in front of me. I like to fix details and work in a team as well to be able to work independently. </p>
             </div>
+        </div>
         </section>
 
-        <section class="secTwo">
+        <section class="secTwo" id="education">
             <div class="secTwo__education">
                 <h3 class="secTwo__title">Education</h3>
 
                 <div id="accordion">
-                    <div class="card card--education">
+                    <div class="row">
+                    <div class="card card--education col-12 col-md-5 col-lg-12 col-xl-3">
 
                         <div class="card-header" id="headingOne">
                             <h5 class="mb-0">
@@ -54,9 +71,10 @@
                             </h5>
                         </div>
                   
-                      <div id="collapseOne-education" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                      <div id="collapseOne-education" class="collapse cardCol" aria-labelledby="headingOne" data-parent="#accordion">
                             <div class="card-body">
-                                <div class="secTwo__box">
+                                <div class="row">
+                                <div class="secTwo__box col-lg-5 col-xl-12">
                                     <div class="secTwo__box--img">
                                         <img src="/img/Udemy1.JPG" alt="" class="secTwo__icon">
                                     </div>
@@ -67,7 +85,7 @@
                                     </div>
                                 </div>
             
-                                <div class="secTwo__box">
+                                <div class="secTwo__box col-lg-5 col-xl-12">
                                     <div class="secTwo__box--img">
                                         <img src="/img/cca.png" alt="" class="secTwo__icon">
                                     </div>
@@ -78,7 +96,7 @@
                                     </div>
                                 </div>
             
-                                <div class="secTwo__box">
+                                <div class="secTwo__box col-lg-5 col-xl-12">
                                     <div class="secTwo__box--img">
                                         <img src="/img/cca.png" alt="" class="secTwo__icon">
                                     </div>
@@ -89,7 +107,7 @@
                                     </div>
                                 </div>
             
-                                <div class="secTwo__box">
+                                <div class="secTwo__box col-lg-5 col-xl-12">
                                     <div class="secTwo__box--img">
                                         <img src="/img/linkedin.jpg" alt="" class="secTwo__icon">
                                     </div>
@@ -100,7 +118,7 @@
                                     </div>
                                 </div>
             
-                                <div class="secTwo__box">
+                                <div class="secTwo__box col-lg-5 col-xl-12">
                                     <div class="secTwo__box--img">
                                         <img src="/img/code-with-mosh-logo_300pix.jpg" alt="" class="secTwo__icon">
                                     </div>
@@ -111,10 +129,11 @@
                                     </div>
                                 </div>
                             </div>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="card card--education">
+                    <div class="card card--education col-12 col-md-5 col-xl-3">
                         <div class="card-header" id="headingTwo">
                             <h5 class="mb-0">
                             <button class="btn btn-link secTwo__subtitle collapsed" data-toggle="collapse" data-target="#collapseTwo-education" aria-expanded="false" aria-controls="collapseTwo">
@@ -122,7 +141,7 @@
                             </button></h5>
                         </div>
 
-                        <div id="collapseTwo-education" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div id="collapseTwo-education" class="collapse cardCol" aria-labelledby="headingTwo" data-parent="#accordion">
                             <div class="card-body">
                                 <div class="secTwo__box">
 
@@ -154,7 +173,7 @@
                         </div>
                     </div>
 
-                    <div class="card card--education">
+                    <div class="card card--education col-12 col-md-5 col-xl-3 col-xl-3">
                         <div class="card-header" id="headingThree">
                             <h5 class="mb-0">
                                 <button class="btn btn-link secTwo__subtitle collapsed" data-toggle="collapse" data-target="#collapseThree-education" aria-expanded="false" aria-controls="collapseThree">
@@ -162,7 +181,7 @@
                                 </button>
                             </h5>
                         </div>
-                        <div id="collapseThree-education" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div id="collapseThree-education" class="collapse cardCol" aria-labelledby="headingThree" data-parent="#accordion">
                             <div class="card-body">
                                 <div class="secTwo__box">
                                     <div class="secTwo__box--img">
@@ -201,16 +220,19 @@
                     </div>
 
                 </div>
+
+                </div>
             </div>
 
         </section>
 
-        <section class="secThree">
+        <section class="secThree" id="experience">
             <div class="secThree__experience">
                 <h3 class="secThree__title">Experience</h3>
 
                 <div id="accordion">
-                    <div class="card card--experience">
+                    <div class="row">
+                    <div class="card card--experience col-12 ">
                         <div class="card-header" id="headingOne">
                             <h5 class="mb-0">
                                 <button class="btn btn-link secThree__subtitle" data-toggle="collapse" data-target="#collapseOne-experience" aria-expanded="false" aria-controls="collapseOne">
@@ -219,7 +241,7 @@
                                 </h5>
                         </div>
 
-                        <div id="collapseOne-experience" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div id="collapseOne-experience" class="collapse cardCol" aria-labelledby="headingOne" data-parent="#accordion">
                             <div class="card-body">
 
                                 <div class="secThree__box">
@@ -246,7 +268,7 @@
                         </div>
                     </div>
 
-                    <div class="card card--experience">
+                    <div class="card card--experience col-12 col-md-5 ">
                         <div class="card-header" id="headingTwo">
                             <h5 class="mb-0">
                                 <button class="btn btn-link secThree__subtitle collapsed" data-toggle="collapse" data-target="#collapseTwo-experience" aria-expanded="false" aria-controls="collapseTwo">
@@ -255,7 +277,7 @@
                             </h5>
                         </div>
                   
-                        <div id="collapseTwo-experience" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div id="collapseTwo-experience" class="collapse cardCol" aria-labelledby="headingTwo" data-parent="#accordion">
                             <div class="card-body">
                                 <div class="secThree__box">
                                     <div class="secThree__box--skill">
@@ -452,7 +474,7 @@
                     </div>
 
 
-                    <div class="card card--experience">
+                    <div class="card card--experience col-12 col-md-5 ">
                         <div class="card-header" id="headingThree">
                             <h5 class="mb-0">
                                 <button class="btn btn-link secThree__subtitle collapsed" data-toggle="collapse" data-target="#collapseThree-experience" aria-expanded="false" aria-controls="collapseThree">
@@ -460,7 +482,7 @@
                                 </button>
                             </h5>
                         </div>
-                        <div id="collapseThree-experience" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div id="collapseThree-experience" class="collapse cardCol" aria-labelledby="headingThree" data-parent="#accordion">
                             <div class="card-body">
 
                                 <div class="secThree__box">
@@ -585,19 +607,19 @@
                             </div>
                         </div>
                     </div>
-
+                </div>
                 </div>
             </div>
 
         </section>
 
-        <section class="secFour">
+        <section class="secFour" id="portfolio">
             <div class="secFour__portfolio">
                 <h3 class="secFour__title">Portfolio</h3>                
-                <div class="secFour container">
+                <div class="secFour ">
                     <div class="row">
 
-                        <div class="secFour__card col-md-6">
+                        <div class="secFour__card col-12 col-md-5 ">
                             <div class="card">
                                 <div class="card-header">
                                     <h4 class="card-title">Il Basilico</h4>
@@ -608,7 +630,9 @@
                                         <img class="card-body__img--img" src="/img/ilBasilico.png" alt="">
                                     </div>
                                     <div class="card-body__description">
-                                        <p class="card-body__description-p">Worked on this website for a new Italian Restauran. I started from a template and then i personalized it. <br> From this experience i learned how to write organize CSS, add Instagram Feed and how to send email from a form in PHP. <br>Furthermore, It was my first experience doing a website for someone else and helped me how to interact with the client, how to satisfy their request and thinking about a design that fit their business</p>
+                                        <p class="card-body__description-p">Worked on this website for a new Italian Restaurant. I started from a template and then i personalized it. </p>
+                                            <p class="card-body__description-p"> From this experience I learned how to write organize CSS, add Instagram Feed and how to send email from a form in PHP. </p>
+                                            <p class="card-body__description-p">Furthermore, It was my first experience doing a website for someone else and helped me how to interact with the client, how to satisfy their request and thinking about a design that fit their business</p>
                                         <div class="card-body__link">
                                             <a href="www.ilbasilico.co" class="btn btn-round">Visit Website</a>
                                         </div>
@@ -617,18 +641,21 @@
                             </div>                            
                         </div>
 
-                        <div class="secFour__card col-md-6">
+                        <div class="secFour__card col-12 col-md-5 ">
                             <div class="card">
                                 <div class="card-header">
                                     <h4 class="card-title">YA Digital Buddy</h4>
                                     <p class="category">Freelance Digital Agency</p>
                                 </div>
-                                <div class="card-body">                                        <div class="card-body__img">
+                                <div class="card-body">                                        
+                                    <div class="card-body__img">
                                         <img class="card-body__img--img" src="/img/yadigitalbuddy.png" alt="">
                                     </div>
                                     <div class="card-body__description">
-                                        <p class="card-body__description-p">I built this website for my freelance activity. <br> From this experience i learned how to deploy a website into a hosting service using FTP, how to implement in-page SEO and develop strategies to improve off-page SEO. <br>In addition, was my first experience on creating and submitting a sitemap.xml and add the website into the google search console. <br> </p>
-                                        <div class="card-body__link">
+                                        <p class="card-body__description-p">I built this website for my freelance activity. </p>
+                                            <p class="card-body__description-p"> From this experience I learned how to deploy a website into a hosting service using FTP, how to implement in-page SEO and develop strategies to improve off-page SEO. </p>
+                                                <p class="card-body__description-p">In addition, was my first experience on creating and submitting a sitemap.xml and add the website into the google search console.</p>
+                                        <div class="card-body__link extra-margin">
                                             <a href="www.yadigitalbuddy.com" class="btn btn-round">Visit Website</a>
                                         </div>
                                     </div>
@@ -636,7 +663,7 @@
                             </div>
                         </div>
                 
-                        <div class="secFour__card col-md-6 ">
+                        <div class="secFour__card col-12 col-md-5">
                             <div class="card">
                                  <div class="card-header">
                                      <h4 class="card-title">Yuri Avello</h4>
@@ -647,7 +674,9 @@
                                         <img class="card-body__img--img" src="/img/yavello.png" alt="">
                                        </div>
                                       <div class="card-body__description">
-                                        <p class="card-body__description-p">One of my first website that i made from zero. <br> It was an assignment for <em>Develop a Digital Identity</em>. <br>I made use of HTML 5, CSS 3 and Bootstrap 4 </p>
+                                        <p class="card-body__description-p">One of my first website that I made from scratch. </p>
+                                            <p class="card-body__description-p"> It was an assignment for <em>Develop a Digital Identity</em>. </p>
+                                                <p class="card-body__description-p">I made use of HTML 5, CSS 3 and Bootstrap 4 </p>
                                         <div class="card-body__link">
                                             <a href="https://grisofandango.github.io/yuriavello.github.io/" class="btn btn-round">Visit Website</a>
                                         </div>
@@ -662,7 +691,7 @@
         </section>
         <footer>
             <h3 class="footer__title">Contacts</h3>
-            <em><h4 class="footer__quote">"Sometimes it's the journey that teach you a lot about the destination" (Drake)</h4></em>
+            <em><h4 class="footer__quote">"Sometimes it's the journey that teach you a lot about the destination"</h4></em>
             <div class="footer__container container">
                 <div class="row">
                     <div class="footer__info col-12 col-xl-4">
@@ -686,13 +715,14 @@
 
     <!-- JS SCript for Materia Theme -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="assets/js/core/jquery.min.js" type="text/javascript"></script>
     <script src="assets/js/core/popper.min.js" type="text/javascript"></script>
     <script src="assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
     <script src="assets/js/plugins/moment.min.js"></script>
     <script src="assets/js/material-kit.js?v=2.0.4" type="text/javascript"></script>
+    <script src="main.js"></script>
 </body>
 </html>
 
