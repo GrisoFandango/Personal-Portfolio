@@ -1,4 +1,3 @@
-
 const cards= document.querySelectorAll(".cardCol")
 console.log(cards)
 function myFunction(x) {
@@ -16,4 +15,4 @@ function myFunction(x) {
   x.addListener(myFunction) // Attach listener function on state changes
 
 
-  
+ 
