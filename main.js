@@ -1,15 +1,3 @@
-// //get all elements from menu
-// const allItems = document.querySelectorAll(".navbar ul li a")
-
-// allItems.forEach(item =>{
-//     item.addEventListener("click",function(e){
-//         //here we will write loop remove all previous classes active
-//         for(var i = 0; i< allItems.length; i++){
-//             allItems[i].classList.remove("active");
-//         }
-//         this.classList.add("active");
-//     })
-// })
 
 const cards= document.querySelectorAll(".cardCol")
 console.log(cards)
@@ -27,14 +15,5 @@ function myFunction(x) {
   myFunction(x) // Call listener function at run time
   x.addListener(myFunction) // Attach listener function on state changes
 
-//   function stickyNavigation()
-// {         
-// 	if($(window).scrollTop() > lnStickyNavigation) 
-// 	{   
-// 		$('body').addClass('fixed');  
-// 	} 
-// 	else 
-// 	{  
-// 		$('body').removeClass('fixed');   
-// 	}  
-// }
+
+  
