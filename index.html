@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +15,37 @@
 
 </head>
 <body data-spy="scroll" data-target="#navbar" data-offset="100">
-    <nav class="navbar navbar-expand-lg sticky-top" id="navbar">
+    <nav class="navbar sticky-top  navbar-expand-lg navbar-light bg-light" id="navbar">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto" id="myNav">
+            <li class="nav-item">
+                <a href="#profile" class="nav-link"> Profile</a>
+            </li>
+            <li class="nav-item">
+                <a href="#education" class="nav-link"> Education</a>
+            </li>
+            <li class="nav-item">
+                <a href="#experience" class="nav-link"> Experience</a>
+            </li>
+            <li class="nav-item">
+                <a href="#portfolio" class="nav-link"> Portfolio</a>
+            </li>
+            <li class="nav-item">
+                <a href="#contacts" class="nav-link"> Contacts</a>
+            </li>
+            
+          </ul>
+          <!-- <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form> -->
+        </div>
+      </nav>
+    <!-- <nav class="navbar navbar-expand-lg sticky-top" id="navbar">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -27,14 +58,14 @@
               </ul>
 
           </div>
-    </nav>
+    </nav> -->
     <header class="head">
         <div>
             <h1 class="head__title">Yuri Avello</h1>
             <h3 class="head__subtitle">Interactive Resume</h3>
         </div>
     </header>
-    <div class="container">
+    <div class="container ">
         <section class="secOne scroll-down" id="profile">
             <!-- <img class="secOne__svg" src="/img/BlueHalfMoon.png" alt=""> -->
             <div class="row">
@@ -689,7 +720,7 @@
                 </div>
             </div>
         </section>
-        <footer>
+        <footer id="contacts">
             <h3 class="footer__title">Contacts</h3>
             <em><h4 class="footer__quote">"Sometimes it's the journey that teach you a lot about the destination"</h4></em>
             <div class="footer__container container">
